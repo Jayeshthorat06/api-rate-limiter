@@ -1,0 +1,29 @@
+{
+  "name": "api-rate-limiter",
+  "version": "1.0.0",
+  "description": "Express middleware with multiple rate-limiting algorithms and Redis support",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node ./src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "test": "ts-node ./src/test/algorithms.test.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["rate-limiter", "express", "middleware", "redis"],
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ioredis": "^5.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.17.19",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
